@@ -15,8 +15,12 @@
     		<div class="twitbox">
         		<h3>What's on your mind ${user.username}?</h3>
         		<form action="/message" method="post">
-          		<p><input type="text" name="text" size="60" maxlength="160"><!--
-          		--><input type="submit" value="Share">
+                  <fieldset class="form-group">
+                    <textarea maxlength="160" class="form-control" placeholder="What's Happening?" title="text" name="text"></textarea>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <input type="submit" class="btn btn-primary pull-right cweet-btn" value="cweet" />
+                  </fieldset>
         		</form>
       		</div>
     	</#if>
